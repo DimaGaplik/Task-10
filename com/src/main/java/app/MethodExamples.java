@@ -16,7 +16,6 @@ public class MethodExamples {
         double height = scanner.nextDouble();
         System.out.println("Об'єм циліндра з радіусом " + radius + " і висотою " + height + " дорівнює " + cylinderVolume(radius, height) + ".");
 
-
         System.out.print("\nВведіть кількість елементів масиву: ");
         int arrayLength = scanner.nextInt();
         int[] array = new int[arrayLength];
@@ -33,6 +32,7 @@ public class MethodExamples {
         String text = scanner.nextLine();
         System.out.println("Рядок в зворотньому порядку: " + reverseString(text));
 
+
         System.out.print("\nВведіть a: ");
         int a = scanner.nextInt();
         System.out.print("Введіть b: ");
@@ -48,9 +48,8 @@ public class MethodExamples {
     }
 
     public static int square(int number) {
-        return number * number;
+        return power(number, 2);
     }
-
 
     public static double cylinderVolume(double radius, double height) {
         return Math.PI * Math.pow(radius, 2) * height;
@@ -95,3 +94,4 @@ public class MethodExamples {
         return sb.toString();
     }
 }
+
